@@ -1,0 +1,88 @@
+.navbar{
+    background: var(--card-color);
+    height:4rem;
+    width:100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    z-index: 3;
+   
+}
+.logo{
+    object-fit: cover;
+    height: auto;
+    width: 3rem;
+}
+.desktopListItem{
+margin: 1rem;
+cursor: pointer;
+color: var(--secondary-color) ;
+}
+.desktopListItem:hover{
+    color: var(--primary-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+.desktopBtn{
+background-color: var(--button-color);
+border: none;
+padding:  0.5rem 1rem;
+border-radius: 1rem;
+text-align: center;
+}
+.desktopBtn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    padding-bottom: 0.5rem;
+    color:var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.nobMenu{
+    object-fit: cover;
+    height:1.8rem;
+    display: none;
+}
+.navMenu{
+    position: absolute;
+    top:4rem;
+    right:0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    height:fit-content;
+    min-width: 15rem;
+    background:var(--card-color);
+    /* border-radius: 1rem; */
+}
+.listItem{
+    width: 100%;
+    color:var(--secondary-color);
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    /* border-radius: 1rem; */
+    background: var(--card-color);
+    border-bottom: 1px solid black;
+}
+@media screen and (max-width:550px) {
+    .nobMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopBtn{
+        display: none;
+    }
+}

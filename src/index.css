@@ -1,0 +1,78 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* background:transparent; */
+  /* color: black; */
+}
+body{
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+:root{
+  background-color: rgb(49,51,59);
+  color:wheat;
+  --card-color:rgb(52,53,66);
+  --primary-color:rgb(255,200,107);
+  --secondary-color:wheat;
+  --button-color:rgb(145, 168, 231);
+  max-width: 75rem;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.icon{
+  width:1rem;
+ 
+}
+button{
+  display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+box-shadow: 0.1rem 0.1rem 0.2rem  rgb(28, 6, 126);
+color: rgb(16, 6, 80);
+}
+button:hover{
+  animation: animie infinite 5s;
+  border: 1px solid;
+}
+@keyframes animie{
+  0%{
+    border-color: blue;
+  }
+  25%{
+    border-color: rgba(0, 9, 128, 0.197);
+  }
+  75%{
+    border-color: blue;
+  }
+  100%{
+    border-color: rgba(47, 0, 255, 0.112);
+  }
+}
+h1{
+ 
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(98, 98, 95);
+  border-bottom: 1px solid yellow;
+  border-image: linear-gradient(to left,yellow,10%,transparent 50%) 100% 1;
+  
+}
+/* button a{
+  text-decoration: none;
+  color: none;
+  
+} */
+a{
+  color:rgb(16, 6, 80);
+}
+a::after{
+  text-decoration: none;
+}
+a::before{
+  text-decoration: none;
+  color:yellow
+}
