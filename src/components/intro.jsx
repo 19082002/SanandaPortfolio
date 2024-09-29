@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import "../css/intro.css";
-import { Facebook,Instagram, Linkedin,MessageCircle,Github} from "lucide-react";
+import { Facebook,Instagram, Linkedin,Github,Download} from "lucide-react";
 function Intro() {
   return (
     <section id="intro">
@@ -18,6 +18,14 @@ function Intro() {
         <Link to="contact">
           <button className="btn">Hire me</button>
         </Link>
+        <Link>
+        <button className="btn resumeBtn">
+          <a href="https://drive.google.com/file/d/1BLE93kznVuHEQV9VWevDS_pXwsN32NOh/view?usp=drive_link">
+         <Download className="icon"/> Resume
+         </a>
+        </button>
+        </Link>
+       
       </div>
       <div className="social">
 

@@ -66,7 +66,7 @@ function Navbar() {
             Contact
           </Link>
         </div>
-        <button className="desktopBtn" onClick={() => {}}>
+        <button className="desktopBtn">
           <a href="https://drive.google.com/file/d/1BLE93kznVuHEQV9VWevDS_pXwsN32NOh/view?usp=drive_link">
          <Download className="icon"/> Resume
          </a>

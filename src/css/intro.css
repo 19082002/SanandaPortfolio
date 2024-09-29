@@ -49,11 +49,16 @@ display: flex;
     border: none;
     font-weight: 800;
 }
-.btnImg{
-    object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
+.resumeBtn{
+    padding: 0.75rem 1rem;
+    display: none;;
 }
+.resumeBtn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .social{
     position: relative;
     width:6vw;
@@ -111,5 +116,13 @@ display: flex;
 @media screen and (max-width:490px){
     .bg{
         right:-40vw;
+    }
+}
+@media screen and (max-width:550px) {
+    .btn{
+        display: none;
+    }
+    .resumeBtn{
+        display: block;
     }
 }
